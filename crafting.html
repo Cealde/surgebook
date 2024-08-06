@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting</title>
+    <!-- Link to Google Fonts -->
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="crafting.css">
+</head>
+<body>
+    <div class="container">
+        <div id="image-display" class="image-display">
+            <img id="expanded-image" src="images/default.png" alt="Crafting Item">
+        </div>
+        <div class="title rubik-mono-one-regular">Crafting</div>
+        <div class="button-grid">
+            <button class="crafting-button" data-image="gold.png" data-sound="click.wav">Gold Ingot</button>
+            <button class="crafting-button" data-image="iron.png" data-sound="click.wav">Iron Ingot</button>
+            <button class="crafting-button" data-image="beef.png" data-sound="click.wav">Cooked Beef</button>
+            <button class="crafting-button" data-image="chicken.png" data-sound="click.wav">Cooked Chicken</button>
+            <button class="crafting-button" data-image="pork.png" data-sound="click.wav">Cooked Pork</button>
+            <button class="crafting-button" data-image="invis.png" data-sound="click.wav">Invisibility Fragment</button>
+            <button class="crafting-button" data-image="charge.png" data-sound="click.wav">Wind Charge</button>
+            <button class="crafting-button" data-image="apple.png" data-sound="click.wav">Golden Apple</button>
+            <button class="crafting-button" data-image="mutton.png" data-sound="click.wav">Cooked Mutton</button>
+            <button class="crafting-button" data-image="debris.png" data-sound="click.wav">Ancient Debris</button>
+            <button class="crafting-button" data-image="template.png" data-sound="click.wav">Upgrade Template</button>
+            <button class="crafting-button" data-image="gapple.png" data-sound="click.wav">God Apple</button>
+            <button class="crafting-button" data-image="tnt.png" data-sound="click.wav">TNT</button>
+            <button class="crafting-button" data-image="pearl.png" data-sound="click.wav">Ender Pearl</button>
+            <button class="crafting-button" data-image="book.png" data-sound="click.wav">Book</button>
+            <button class="crafting-button" data-image="infernal.png" data-sound="click.wav">Flaming Cocktail</button>
+            <a href="index.html"><button class="back-button" data-sound="buttonback.wav">Go Back</button>
+        </div>
+        <div class="corner-text">By cldp.</div>
+    </div>
+    <audio id="button-sound" src=""></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>

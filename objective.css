@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #043863, #d16207); /* Gradient background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+.corner-text {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    z-index: 1000;
+}
+
+.rounded-rectangle {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+.rounded-rectangle p {
+    margin: 10px 0;
+}
+.back-button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-family: 'Ubuntu', sans-serif; /* Custom font for the buttons */
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+}

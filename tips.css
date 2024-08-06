@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c6f103dc, #07f4fc); /* Gradient background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+}
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .back-button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-family: 'Ubuntu', sans-serif; /* Custom font for the buttons */
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+}
+.top-glass-box {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    height: auto;
+    max-width: 80%;
+}
+.title {
+    font-size: 2em;
+    color: #fff;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+.small-glass-box {
+    min-width: 50px;
+    min-height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: #0a0b24;
+    position: relative;
+}
+.corner-text {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    z-index: 1000;
+}
+.large-glass-box {
+    width: 90%;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: #232133;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+

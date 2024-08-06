@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features and Tips</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="tips.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="title rubik-mono-one-regular">Features and Tips</div>
+        <div class="top-glass-box">
+            <div class="slider" id="slider">
+                <div class="small-glass-box" onclick="showContent('All ores are more common and have increased in vein size, some ores such as coal and gold now drop more, and diamonds generate on higher y levels')">Ore Generation</div>
+                <div class="small-glass-box" onclick="showContent('Invisibility Fragement is a one-time use item where once used will grant the player with 30 seconds of invisibility, but remember to not have any item in your main and off hand to be truly invisible')">Invisibility Fragment</div>
+                <div class="small-glass-box" onclick="showContent('Every player get 12 golden carrots when the game starts, The food drops of animals are increased and hostile mobs drop raw beef upon death')">Food</div>
+                <div class="small-glass-box" onclick="showContent('This is a reminder that a bow is really useful but many players simply forget to craft it, arrows are now also very cheap to craft, check the Crafting Tab for more info')">Bow and Arrows</div>
+                <div class="small-glass-box" onclick="showContent('By default when you talk during a game, your messages will only be visible to your teammates, but incase you want to talk to the players of the other team you can use /shout')">Team Chat</div>
+                <div class="small-glass-box" onclick="showContent('All foods and ores that can be smelted is craftable with 4 of that item and 1 coal or charcoal, check Crafting Tab for more info')">Craft-Furnace</div>
+                <div class="small-glass-box" onclick="showContent('Upon death there is a 22 second timer till you respawn and if you have an incendiary it will get dropped but your inventory is kept')">Death</div>
+                <div class="small-glass-box" onclick="showContent('Ancient Debris spawns in deep caves and Netherite Upgrade Templates are easier to obtain check Crafting Tab for info')">Netherite</div>
+                <div class="small-glass-box" onclick="showContent('With the custom recipes, redstone is pretty useful, so try to gather as much as you can')">Redstone Implications</div>
+                <div class="small-glass-box" onclick="showContent('Gold is a very valuable resource used in 3 very important recipes, so try to gather as much as possible')">Gold Implications</div>
+                <div class="small-glass-box" onclick="showContent('Deepslate now drops 2-3 cobbled deepslate, this drop is meant for building a bridge to mid and a good chunky defense')">More Deepslate</div>
+                <div class="small-glass-box" onclick="showContent('Killing an enemy plays a satisfying sound and grants absorption and strength 2 for 5 seconds and if they have an Incendiary they will drop that too.')">Killing</div>
+                <div class="small-glass-box" onclick="showContent('Flaming Cocktail is a projectile that once landing creates a radius of flames that damage everyone inside it')">Flaming Cocktail</div>
+            </div>
+        </div>
+        <div id="large-glass-box" class="large-glass-box">
+            <p id="large-box-content">Click a box to see the content here</p>
+        </div>
+        <a href="index.html"><button class="back-button">Go Back</button>
+    </div>
+    <div class="corner-text">By cldp.</div>
+
+    <script>
+        function showContent(content) {
+            document.getElementById('large-box-content').textContent = content;
+        }
+
+        window.onload = function() {
+            const slider = document.getElementById('slider');
+            const smallBoxes = slider.getElementsByClassName('small-glass-box');
+            if (smallBoxes.length <= 5) {
+                slider.style.overflow = 'hidden';
+            } else {
+                slider.style.overflowY = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
