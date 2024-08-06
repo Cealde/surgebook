@@ -77,3 +77,6 @@ body {
 .tips:hover {
     background: rgba(104, 52, 10, 0.6);
 }
+.changelogs:hover {
+    background: rgba(179, 207, 20, 0.6);
+}
