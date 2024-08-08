@@ -34,6 +34,18 @@ body {
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
 }
+.corner-text {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    z-index: 1000;
+}
 .back-button {
     display: block;
     margin: 10px auto;
